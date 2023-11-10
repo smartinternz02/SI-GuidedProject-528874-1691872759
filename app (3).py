@@ -18,7 +18,7 @@ def index() :
 def predict():
     
     # loading model which we saved
-    model = pickle.load(open('gdp.pkl', 'rb'))
+    model = pickle.load(open('model.pkl', 'rb'))
  
     data = [[x for x in request.form.values()]]    
     
